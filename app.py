@@ -9,10 +9,7 @@ app = dash.Dash(__name__,title="Rummy Scorer",meta_tags=[
         {"name": "viewport", "content": "width=device-width, initial-scale=1"}
     ])
 
-params = [
-    'Weight', 'Torque', 'Width', 'Height',
-    'Efficiency', 'Power', 'Displacement'
-]
+server = app.server
 
 app.layout = html.Div([
     html.H1("Rummy Scorer",style={"text-align":"center"}),
